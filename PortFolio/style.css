@@ -1,0 +1,332 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 40px;
+}
+
+#home {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#home div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#home div h2 {
+    color: #333;
+}
+
+#home div p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+/* Add more styles as needed */
+.contact-form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.portfolio-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-section h2 {
+    text-align: center;
+    color: #333;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #333;
+}
+
+.description {
+    margin-bottom: 10px;
+}
+
+.technologies {
+    color: #666;
+}
+
+
+/*------------------------ skill section ------------------------------------  */
+
+.skills-section {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: #333;
+}
+
+.skill {
+    position: relative;
+    margin: 15px 0;
+}
+
+.skill i {
+    font-size: 36px;
+    color: #333;
+}
+
+.graph {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.graph::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#graph1::before{
+    animation: best 1s ease-in-out forwards;
+    background-color: #3498db;
+
+}
+
+#graph2::before{
+    animation: best 1s ease-in-out forwards;
+    background-color: red;
+
+}
+
+#graph3::before{
+    animation: good 1s ease-in-out forwards;
+    background-color:yellow;
+}
+
+#graph4::before{
+    animation: better 1s ease-in-out forwards;
+    background-color: #17ee4d;
+
+}
+
+#graph5::before{
+    animation: good 1s ease-in-out forwards;
+    background-color: rgb(237, 14, 222);
+
+}
+
+#graph6::before{
+    animation: better 1s ease-in-out forwards;
+    background-color:rgb(12, 236, 240);
+}
+
+#graph7::before{
+    animation: good 1s ease-in-out forwards;
+    background-color: rgb(155, 203, 12);
+}
+
+#graph8::before{
+    animation: better 1s ease-in-out forwards;
+    background-color:rgb(255, 139, 6);
+}
+
+.graph p {
+    position: absolute;
+    top: 50%;
+    /* left: 5%; */
+    transform: translate(0%, -50%);
+    color: #fff;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.skill p {
+    margin: 0;
+    padding: 5px;
+}
+
+
+
+
+@keyframes better {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+
+
+@keyframes best {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes good {
+    from {
+        width: 0;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+
+@keyframes mongodb {
+    from {
+        width: 0;
+    }
+    to {
+        width: 90%;
+    }
+}
+
+.skill .graph::before {
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+}
+
+.skill .graph p {
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .contact-form {
+        width: 80%;
+    }
+    .portfolio-section {
+        width: 90%;
+    }
+    .skills-section {
+        width: 90%;
+    }
+    #home div {
+        padding: 0 20px;
+    }
+    .graph::before {
+        animation: none;
+        width: 100%;
+    }
+
+}
+
